@@ -122,7 +122,7 @@ body {
   /* -------HOME--------- */
   .home {
     min-height: 100vh;
-    background-image: url(../public/images/barcelona_a.JPG);
+    background-image: url(public/images/Barcelona_a.jpg);
     background-size: cover;
     padding: 50px;
   }

@@ -726,6 +726,7 @@ body {
      }
     .home .home-content .block h3{
       font-size: 30px;
+      display: none;
     }
      
    header{
@@ -772,9 +773,16 @@ body {
     display: inline-block;
   }
 
-  .about .about-content .img{
+  .about .about-content .img {
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 20px;
+  }
+  
+  .about .about-content .img img {
+    width: 100%;
+    display: block;
+    padding: 40px;
   }
  
   .about .about-content .text{
@@ -783,6 +791,13 @@ body {
     padding-left: 0;
     padding-top: 30px;
   }
+
+  .about .about-content .text .my-info .list label {
+    padding-right: 10px;
+    color: #C2185B;
+    font-weight: 600;
+    font-size: 14px;
+}
 
   .skills .skills-content {
     flex: 0 0 100%;
@@ -794,11 +809,18 @@ body {
   max-width: 100%;
 }
 
+.skills .img img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
  .experience .experience-content {
   flex: 0 0 100%;
   max-width: 100%;
   margin: 0;
-  padding: 20px;
+  padding: 30px;
 }
 
  .experience .experience-content .experience-slider .slide{
@@ -821,9 +843,6 @@ body {
 
 @media(max-width: 500px){
 
-  .home {
-    background-position: center;
-  }
   .home .home-content .block h1{
     font-size: 25px;
    }
@@ -850,15 +869,130 @@ body {
   margin: 0 0 15px;
 }
 
+.about .about-content .text .my-info .list {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e1bee7;
+  padding-bottom: 10px;
+}
+
+
+.about .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.about .about-content .img img {
+  width: 100%;
+  display: block;
+  padding: 20px;
+}
+
   .about .about-content .text .my-info .list p {
     flex: 0 0 100%;
     margin:0;
   }
 
   .skills .img img {
-    width: 60%;
+    /* width: 60%; */
     display: block;
-    margin-left: 90px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+}
+
+@media (max-width: 360px){
+ /* .home {
+  background-image: url('../images/Barcelona_mobileversion.jpg');
+ } */
+
+ .home {
+   padding: 0;
+ }
+
+ .home .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 250px;
+}
+
+.home .home-content .block h3{
+  display: none;
+}
+
+.about .about-content .img img {
+  width: 100%;
+  display: block;
+  padding: 20px;
+}
+
+.about .about-content .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.about .about-content .text .my-info .list {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e1bee7;
+  padding-bottom: 10px;
+}
+
+.about .about-content .text .my-info .list label {
+  padding-right: 10px;
+  color: #C2185B;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.about .about-content .text .my-info .list p {
+  flex: 0 0 50%;
+  margin: 0;
+}
+
+.skills .skills-title h1:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  height: 2px;
+  right: 60%;
+  background-color: #e1bee7;
+  bottom: 0;
+}
+
+.skills .skills-content .skills-box h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #616161;
+  margin: 0 0 8px;
+}
+
+.skills .skills-content .skills-title p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #616161;
+  margin: 0 0 12px;
+}
+
+.skills .img img {
+  /* width: 60%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 }
